@@ -7,6 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\User;
 
+/**
+ * Class Book.
+ * @author Varlent <varlent.422023028@civitas.ukrida.ac.id>
+ * 
+ * @OA\Schema(
+ *     description="Book model",
+ *     title="Book model",
+ *     required={"title", "author"},
+ *     @OA\Xml(
+ *         name="Book"
+ *     )
+ * )
+ */ 
+
 class Book extends Model
 {
     // use HasFactory;
